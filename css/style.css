@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	height: 66%;
 	text-align: center;
-	font-size: 0;
+	font-size: 0;	
 }
 
 .top-white, .black{	
@@ -29,11 +29,15 @@ body {
 	border-width: 1px;
 	border-left-style: solid;
 	border-right-style: solid;
-	font-size: 1rem;
+	vertical-align: middle;
 }
 
 .black {
-	background-color: hsla(0, 100%, 0%, 0.7);	
+	background-color: hsla(0, 100%, 0%, 0.7);
+	color: white;
+	border-color: black;
+	font-size: 1rem;
+	padding-top: 4.5rem;
 }
 
 #bottom-row {
@@ -53,6 +57,7 @@ body {
 	border-right-style: solid;
 	border-radius: 0 0 5px 5px;
 	font-size: 1rem;
+	padding-top: 1.5rem;
 }
 
 .bottom-full {
@@ -62,4 +67,3 @@ body {
 .bottom-left, .bottom-right {
 	width: 45px;
 }
-
