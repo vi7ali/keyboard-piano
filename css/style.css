@@ -1,11 +1,16 @@
 body {
-	background: url("../img/backg.jpeg") no-repeat center center fixed;
+	background: url("../img/backg.jpg") no-repeat center center fixed;
 	background-size: cover;
+}
+
+.key {
+	transition: all 0.1s ease;
+	font-size: 1rem;
 }
 
 #piano {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -35,9 +40,9 @@ body {
 .black {
 	background-color: hsla(0, 100%, 0%, 0.7);
 	color: white;
-	border-color: black;
-	font-size: 1rem;
+	border-color: black;	
 	padding-top: 4.5rem;
+	
 }
 
 #bottom-row {
@@ -47,7 +52,7 @@ body {
 	font-size: 0;
 }
 
-.bottom-full, .bottom-left, .bottom-right {
+.bottom-full, .bottom-half {
 	background-color: hsla(0, 100%, 100%, 0.7);
 	display: inline-block;
 	height: 100%;
@@ -55,8 +60,7 @@ body {
 	border-width: 1px;
 	border-left-style: solid;
 	border-right-style: solid;
-	border-radius: 0 0 5px 5px;
-	font-size: 1rem;
+	border-radius: 0 0 5px 5px;	
 	padding-top: 1.5rem;
 }
 
@@ -64,6 +68,11 @@ body {
 	width: 60px;
 }
 
-.bottom-left, .bottom-right {
+.bottom-half {
 	width: 45px;
+}
+
+.playing {
+	box-shadow: 0 10px 15px 0px;
+	color: hsl(0, 100%, 25%);
 }
